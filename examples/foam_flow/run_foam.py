@@ -12,8 +12,8 @@ num_cores = 128
 
 simulation = FoamSimulation(
     geometry_file, domain_size, cpus=num_cores, mpi_launcher="ibrun",
-    params={"Nucleation": {"distribution": "list", "numberOfBubbles": 300, "radius": 12, "shift": 20, "packingOffset": 3},
-     "numerics": {"g_LB": -1e-4, "maxIter": 20000,}, "fluid": {"contactAngle": 30.0 }, "output": {"outIter": 500, "save_it": 100000},
+    params={"geometry": {"fluidPoolHeight_LB": 18}, "Nucleation": {"distribution": "list", "numberOfBubbles": 2, "radius": 10, "shift": 20, "packingOffset": 3},
+     "numerics": {"g_LB": -1e-4, "maxIter": 20000,}, "fluid": {"contactAngle": 0.0 }, "output": {"outIter": 500, "save_it": 100000},
     },  
 )
 for ax in "xyz":
