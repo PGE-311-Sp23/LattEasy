@@ -329,14 +329,14 @@ void printSimulationParameters(SimulationParameters const &param) {
         << ", " << param.gVector_LB[2] << " )" << std::endl;
   pcout << "rho_LB = " << param.rho_LB << std::endl;
   pcout << "sigma_LB = " << param.sigma_LB << std::endl;
-  pcout << "omega = " << param.omega << std::endl;
   pcout << "tau_LB = " << param.tau_LB << std::endl;
+  pcout << "omega = " << param.omega << std::endl;
   pcout << std::endl;
   pcout << "contractAngle = " << param.contactAngle * 180.0 / acos((T)-1)
         << std::endl;
 
   pcout << "gas_ini = " << param.gasIni_LB << std::endl;
-  pcout << "tau_LB = " << param.tau_LB << std::endl;
+  pcout << "tauD_LB = " << param.tau_LB << std::endl;
   pcout << "adOmega = " << param.adOmega << std::endl;
   pcout << "Kh_LB = " << param.kh_LB << std::endl;
   pcout << "maxIter = " << param.maxIter << std::endl;
